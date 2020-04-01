@@ -13,6 +13,8 @@
 		47F2C54E24309D8D007AF72A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F2C54C24309D8D007AF72A /* Main.storyboard */; };
 		47F2C55024309D8D007AF72A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F2C54F24309D8D007AF72A /* Assets.xcassets */; };
 		47F2C55324309D8D007AF72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F2C55124309D8D007AF72A /* LaunchScreen.storyboard */; };
+		47F885FC243473840064B56E /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F885FB243473840064B56E /* AppsFlyerLib.framework */; };
+		47F885FE243480430064B56E /* AFTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F885FD243480430064B56E /* AFTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		47F2C54F24309D8D007AF72A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47F2C55224309D8D007AF72A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47F2C55424309D8D007AF72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47F885FB243473840064B56E /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
+		47F885FD243480430064B56E /* AFTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F885FC243473840064B56E /* AppsFlyerLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				47F2C54524309D8D007AF72A /* kite */,
 				47F2C54424309D8D007AF72A /* Products */,
+				47F885FB243473840064B56E /* AppsFlyerLib.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +69,7 @@
 				47F2C54F24309D8D007AF72A /* Assets.xcassets */,
 				47F2C55124309D8D007AF72A /* LaunchScreen.storyboard */,
 				47F2C55424309D8D007AF72A /* Info.plist */,
+				47F885FD243480430064B56E /* AFTracker.swift */,
 			);
 			path = kite;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F2C54B24309D8D007AF72A /* ViewController.swift in Sources */,
+				47F885FE243480430064B56E /* AFTracker.swift in Sources */,
 				47F2C54724309D8D007AF72A /* AppDelegate.swift in Sources */,
 				47F2C54924309D8D007AF72A /* SceneDelegate.swift in Sources */,
 			);
@@ -285,6 +293,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = kite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = kite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
